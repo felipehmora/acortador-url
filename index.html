@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Acortador de URLs</h1>
+    <div class="url-form">
+      <form id="shortenForm">
+        <div class="fields">
+          <input type="text" id="longUrl" placeholder="Enter long URL" />
+          <input type="text" id="shortUrl" readonly />
+        </div>
+        <div class="url-button">
+          <button type="submit" id="submit">Shorten</button>
+        </div>
+      </form>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
