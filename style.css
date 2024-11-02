@@ -2,112 +2,153 @@ body,
 html {
   height: 100%;
   margin: 0;
-  background-color: #212121;
+  background-color: #ffffff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h1 {
   text-align: center;
-  color: white;
+  color: hsl(257, 27%, 26%);
 }
 
-/* Estilo general para centrar el formulario */
 .url-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.url-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15%;
-}
-
-input {
-  width: 400px;
-  height: 40px;
-  border-radius: 10px;
-  border-style: none;
-}
-
-button {
-  background-color: #218838;
-  color: #ffff;
-  border-style: none;
-  border-radius: 10px;
-  width: 150px;
-  height: 40px;
-  cursor: pointer;
+  margin-top: 5%;
 }
 
 .fields {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.input-container {
-  position: relative;
-}
-
-.input-container input {
+  flex-direction: row; /* Cambia a fila para alinear horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos */
+  text-align: center; /* Centra el texto dentro de los elementos */
+  background-color: hsl(257, 27%, 26%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
-  padding-right: 30px;
-  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.input-container .icon {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
+input {
+  width: 700px; /* Ajusta el ancho del input como necesites */
+  height: 40px;
+  border-radius: 10px;
+  border-style: none;
+  margin-right: 10px; /* Espacio entre el input y el botón */
 }
 
-/* Responsivo para pantallas medianas */
-@media (max-width: 768px) {
-  input {
-    width: 100%; /* Ocupa el 100% del contenedor */
-    height: 35px;
-  }
-
-  button {
-    width: 130px;
-    height: 35px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
+button {
+  background-color: hsl(180, 66%, 49%);
+  color: #ffff;
+  border-style: none;
+  border-radius: 20px;
+  width: 150px; /* Ancho del botón */
+  height: 40px;
+  cursor: pointer;
 }
 
-/* Responsivo para pantallas pequeñas (móviles) */
-@media (max-width: 480px) {
-  .url-form {
-    padding: 20px; /* Espacio adicional alrededor del formulario */
-  }
+li {
+  list-style: none;
+}
 
-  input {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    height: 35px;
-    font-size: 14px;
-  }
+.navbar {
+  background-color: #ffffff; /* Color de fondo de la navbar */
+  color: white; /* Color del texto */
+  padding: 15px 0; /* Espaciado superior e inferior */
+  margin-top: 20px;
+}
 
-  button {
-    width: 100%; /* Botón de ancho completo */
-    height: 40px;
-    font-size: 14px;
-  }
+.container {
+  display: flex; /* Usar flexbox para alinear elementos */
+  align-items: center; /* Centrar verticalmente */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+  padding: 0 20px; /* Espaciado lateral */
+}
 
-  .fields {
-    gap: 15px; /* Reduce el espacio entre campos */
-  }
+.button-container {
+  display: flex; /* Usar flexbox para alinear los botones */
+  gap: 10px; /* Espacio entre los botones */
+}
 
-  h1 {
-    font-size: 1.2rem;
-  }
+.nav-button {
+  background-color: #ff4081; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno */
+  cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+  transition: background-color 0.3s; /* Transición para el color de fondo */
+}
+
+.nav-button:hover {
+  background-color: #e91e63; /* Color al pasar el mouse */
+}
+
+.logo {
+  font-size: 24px; /* Tamaño de fuente del logo */
+  text-decoration: none; /* Sin subrayado */
+  color: white; /* Color del logo */
+  font-weight: bold; /* Poner en negrita */
+  margin-left: 20px; /* Espacio entre el logo y los botones */
+}
+
+.nav-links {
+  list-style: none; /* Sin viñetas */
+  display: flex; /* Usar flexbox para alinear los enlaces */
+  margin-left: auto; /* Mover los enlaces hacia la derecha */
+  margin: 0; /* Sin margen */
+  padding: 0; /* Sin padding */
+}
+
+.nav-links li {
+  margin-left: 50px; /* Espacio entre los enlaces */
+}
+
+.nav-links a {
+  text-decoration: none; /* Sin subrayado */
+  color: gray; /* Color de los enlaces */
+  transition: color 0.3s; /* Transición suave para el color */
+  font-weight: bold; /* Poner en negrita */
+}
+
+.button-container {
+  display: flex; /* Usar flexbox para alinear los botones */
+  gap: 10px; /* Espacio entre los botones */
+  margin-left: 400px;
+}
+
+.login-button {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+  color: gray;
+  text-decoration: bold;
+}
+
+.signup-button {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+
+.hero {
+  display: flex;
+  margin-left: 20%;
+}
+
+.hero,
+h1 {
+  margin-top: 40px;
+  font-size: 75px;
+  text-align: left;
+}
+
+p {
+  margin-top: -25px;
+  font-size: 20px;
+  text-align: left;
+  color: gray;
 }
